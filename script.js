@@ -1,0 +1,1 @@
+console.log("Budget Tracker JavaScript is working!");

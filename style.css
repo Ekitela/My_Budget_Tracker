@@ -1,0 +1,96 @@
+/* --- Global / Element Selectors --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Base Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- ID Selectors --- */
+#main-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#main-header h1 {
+    color: #1a365d;
+    margin-bottom: 8px;
+}
+
+#add-expense-section {
+    border-top: 4px solid #2b6cb0;
+}
+
+#expenses-list-section {
+    border-top: 4px solid #38a169;
+}
+
+/* --- Class Selectors --- */
+.subtitle {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+/* Reusable Card Style for Sections */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2d3748;
+}
+
+/* Input Styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #4a5568;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Button Visual Styling */
+.btn-primary {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Placeholder Styling */
+.placeholder-text {
+    color: #718096;
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+}
