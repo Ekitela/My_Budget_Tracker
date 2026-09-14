@@ -1,96 +1,128 @@
-/* --- Global / Element Selectors --- */
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333333;
     margin: 0;
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
-/* Base Container */
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* --- ID Selectors --- */
-#main-header {
+/* Main heading */
+#main-heading {
+    background-color: lightblue;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
-#main-header h1 {
-    color: #1a365d;
-    margin-bottom: 8px;
+#main-heading img {
+    display: block;
+    margin: 0 auto 10px;
 }
 
-#add-expense-section {
-    border-top: 4px solid #2b6cb0;
+h1 {
+    font-size: 32px;
 }
 
-#expenses-list-section {
-    border-top: 4px solid #38a169;
-}
-
-/* --- Class Selectors --- */
-.subtitle {
-    color: #4a5568;
-    font-size: 1.1rem;
-    margin-top: 0;
-}
-
-/* Reusable Card Style for Sections */
-.card {
-    background-color: #ffffff;
+/* Add Expense section */
+.add-expense-section {
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.card h2 {
-    margin-top: 0;
-    color: #2d3748;
+/* Direct child selector */
+.add-expense-section>form {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Input Styles */
-.form-group {
-    margin-bottom: 16px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 6px;
-    color: #4a5568;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
+/* Form inputs */
+input,
+select {
+    width: 90%;
     padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #cbd5e0;
-    border-radius: 4px;
-    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
-/* Button Visual Styling */
-.btn-primary {
-    background-color: #2b6cb0;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 4px;
-    font-size: 1rem;
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    outline: 2px solid blue;
+}
+
+/* Negation pseudo-class */
+input:not([type="submit"]) {
+    border: 1px solid #aaa;
+}
+
+/* Button */
+button {
+    width: 150px;
+    padding: 10px;
     cursor: pointer;
-    width: 100%;
 }
 
-/* Placeholder Styling */
-.placeholder-text {
-    color: #718096;
-    font-style: italic;
+/* Expenses section */
+.expenses-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Descendant selector */
+.expenses-section td,
+.expenses-section th {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Colored header */
+.expenses-section th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Alternating row colors */
+.expenses-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect */
+.expenses-section tbody tr:hover {
+    background-color: #d9f0ff;
+}
+
+/* Instructions */
+.instructions {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Video */
+.video-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    padding: 20px 0;
+}
+
+.video-section iframe {
+    max-width: 100%;
 }
