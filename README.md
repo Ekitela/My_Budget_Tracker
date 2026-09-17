@@ -1,122 +1,84 @@
-# SpendWise Dashboard
+
+# SpendWise Budget Tracker
 
 ## Project Description
 
-SpendWise is a responsive financial dashboard shell designed as the foundation for a budget-tracking application. This week's work focused on rebuilding the existing Budget Tracker layout using modern CSS Grid and Flexbox techniques.
+SpendWise is a budget-tracking web application designed to help users understand their spending, manage their monthly budget, and monitor their remaining balance.
 
-The dashboard contains a sidebar navigation menu, a header, and six financial category cards with realistic static information.
+The project uses HTML, CSS, and JavaScript to create a foundation for a simple personal finance application.
 
-## Dashboard Sections
+## JavaScript Concepts Implemented
 
-### Sidebar
+### 1. Variables
 
-The sidebar contains navigation links for:
+JavaScript variables are used to store application data, including:
 
-* Dashboard
-* Expenses
-* Budget
-* Savings
-* Reports
+- Monthly budget
+- Food expenses
+- Transport expenses
+- Rent expenses
+- Entertainment expenses
+- Utilities expenses
+- Savings amount
 
-### Dashboard Header
+### 2. User Input
 
-The header displays the SpendWise dashboard title, a short description, and a welcome message.
+The `prompt()` function collects the user's monthly budget.
 
-### Financial Category Cards
+The input is converted from text to a number using the `Number()` function.
 
-The dashboard contains six cards:
+### 3. Calculations
 
-* Food
-* Transport
-* Rent
-* Entertainment
-* Savings
-* Utilities
+The application calculates:
 
-Each card displays a category description and a realistic financial amount.
+- Total expenses
+- Remaining balance
 
-## CSS Grid and Flexbox
+The remaining balance is calculated by subtracting total expenses from the monthly budget.
 
-CSS Grid is used to create the main dashboard structure and arrange the financial cards.
+### 4. Functions
 
-Flexbox is used to:
+The project uses reusable functions to perform budget calculations.
 
-* Arrange sidebar navigation items
-* Align the dashboard header content
-* Organize information inside each financial card
+The functions include:
 
-No absolute positioning is used for the page layout.
+- `calculateTotalExpenses()` - Calculates the total expenses.
+- `calculateRemainingBalance()` - Calculates the remaining budget balance.
 
-## CSS Custom Properties
+### 5. Console Output
 
-The application uses CSS variables in the `:root` selector for the main design theme, including:
+The application displays clearly labeled budget information in the browser console, including:
 
-* Brand color
-* Accent color
-* Background color
-* Surface color
-* Primary text color
-* Secondary text color
-* Border color
+- Monthly budget
+- Total expenses
+- Savings
+- Remaining balance
+- Budget status
 
-Using CSS custom properties makes the theme easier to maintain and modify.
-
-## Responsive Design
-
-The dashboard includes a media query for screens below 768px.
-
-On smaller screens:
-
-* The sidebar and main content become a single-column layout.
-* Navigation items can wrap across the available width.
-* The financial cards are displayed in one column.
-* The header content is arranged vertically.
-
-The responsive layout was tested using Chrome DevTools Device Toolbar.
-
-## Micro-interactions
-
-The financial cards include subtle interactions:
-
-* Hover effects move the cards slightly upward and add a shadow.
-* Keyboard focus displays a visible outline.
-* The transitions are completed within 200 milliseconds.
-
-## Dark Theme
-
-An optional dark theme is included using:
-
-```css
-@media (prefers-color-scheme: dark)
-```
-
-The dark theme overrides the CSS custom properties without changing the main layout styles.
-
-## Files
+## Project Files
 
 ### index.html
 
-Contains the structure of the SpendWise dashboard, including the sidebar, header, navigation menu, and six financial category cards.
+Contains the structure of the SpendWise dashboard, including the sidebar, navigation menu, header, and financial category cards.
 
 ### style.css
 
-Contains all visual styling, including CSS Grid, Flexbox, responsive design, CSS custom properties, card interactions, and the optional dark theme.
+Contains the visual styling, responsive layout, CSS Grid, Flexbox, custom properties, and card interactions.
 
 ### script.js
 
-The existing JavaScript file is retained from the previous Budget Tracker project. No new functionality was required for this week's dashboard shell assignment.
+Contains the JavaScript foundation for SpendWise. It stores budget data, collects user input, performs calculations, and displays results in the browser console.
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* CSS Grid
-* CSS Flexbox
-* CSS Custom Properties
-* Google Fonts
-* Responsive Design
-* GitHub
+- HTML5
+- CSS3
+- JavaScript
+- CSS Grid
+- CSS Flexbox
+- Responsive Design
+- GitHub
 
 ## Learning Outcome
 
-Through this project, I practiced building a modern dashboard layout using CSS Grid and Flexbox. I also improved my understanding of responsive design, CSS custom properties, micro-interactions, and reusable layout techniques.
+Through this assignment, I improved my understanding of JavaScript variables, user input, type conversion, functions, calculations, and console output. I also learned how to connect a JavaScript file to an HTML document.
