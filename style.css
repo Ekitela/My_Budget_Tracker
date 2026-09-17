@@ -1,4 +1,4 @@
-```css:root {
+:root {
     --brand-color: #2e7d32;
     --accent-color: #66bb6a;
     --surface-color: #ffffff;
@@ -21,14 +21,12 @@ body {
     line-height: 1.6;
 }
 
-/* Overall dashboard layout using CSS Grid */
 .dashboard {
     display: grid;
     grid-template-columns: 240px 1fr;
     min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
     background-color: var(--brand-color);
     color: white;
@@ -65,12 +63,10 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Main content */
 .main-content {
     padding: 32px;
 }
 
-/* Header using Flexbox */
 .dashboard-header {
     display: flex;
     justify-content: space-between;
@@ -99,28 +95,23 @@ body {
     color: var(--secondary-text);
 }
 
-/* Category cards arranged using CSS Grid */
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-/* Individual cards use Flexbox */
 .category-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 24px;
-
-    ``` background-color: var(--surface-color);
+    background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 24px;
     min-height: 180px;
-
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    ```
 }
 
 .category-card h2 {
@@ -139,13 +130,11 @@ body {
     color: var(--primary-text);
 }
 
-/* Hover interaction */
 .category-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 
-/* Keyboard focus interaction */
 .category-card:focus {
     outline: 3px solid var(--accent-color);
     outline-offset: 3px;
@@ -153,10 +142,8 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
 }
 
-/* Responsive layout below 768px */
 @media (max-width: 767px) {
-
-    ``` .dashboard {
+    .dashboard {
         grid-template-columns: 1fr;
     }
 
@@ -182,13 +169,11 @@ body {
         grid-template-columns: 1fr;
     }
 
-    ```
+
 }
 
-/* Optional dark theme */
 @media (prefers-color-scheme: dark) {
-
-    ```:root {
+    :root {
         --brand-color: #66bb6a;
         --accent-color: #81c784;
         --surface-color: #1e1e1e;
@@ -197,6 +182,4 @@ body {
         --secondary-text: #b0b0b0;
         --border-color: #333333;
     }
-
-    ```
 }
