@@ -1,31 +1,49 @@
-# Web Development Fundamentals Project
+# Budget Tracker
 
-## Overview
-This project showcases semantic HTML5 elements, an upgraded interactive form, integrated multimedia components, and styling applied using advanced CSS selectors.
+## Project Description
 
-## Files Included
-- `index.html`: Contains the structural markup for the webpage.
-- `style.css`: Contains custom CSS rules for layout and styling.
-- `README.md`: Explains the repository structure and implementation details.
+This Budget Tracker is a simple web application designed to help users record and organize their daily expenses. This week's work focused on improving the visual design of the existing Budget Tracker using CSS without adding new functionality.
 
-## Implementation Details
+## Files
 
-### 1. HTML Table Structure
-- Built using semantic components: `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, and `<td>`.
-- Displays structured product catalog data cleanly.
+### index.html
 
-### 2. Form Upgrade
-- Wrapped inside a `<form>` element.
-- Includes inputs for Name and Email, accompanied by a `<select>` element offering **5 unique options** (Starter, Basic, Pro, Business, Enterprise).
-- Features explicit `for` attributes on `<label>` elements matching input `id` attributes.
-- Uses `<button type="submit">` for form submission.
+The `index.html` file provides the structure of the Budget Tracker. It contains the page heading, Add Expense form, and Expense Table where expense information is displayed.
 
-### 3. Multimedia Elements
-- An `<img>` element displaying a banner with explicit `src`, `alt`, `width`, and `height` attributes.
-- An `<iframe>` element embedding a responsive video with explicit `src`, `title`, `width`, `height`, and `allowfullscreen` attributes.
+### style.css
 
-### 4. Advanced CSS Selectors
-- **Direct Child Selector (`main > section`)**: Styles top-level content cards.
-- **Structural Pseudoclass (`tbody tr:nth-child(even)`)**: Applies zebra striping to alternate table rows.
-- **User Action Pseudoclass (`input:focus, select:focus`)**: Provides visual feedback when form elements are focused.
-- **Attribute Selector (`button[type="submit"]`)**: Targets and styles the submit button independently.
+The `style.css` file controls the visual appearance of the application. It includes:
+
+* A consistent blue and teal color palette
+* Google Fonts for headings and body text
+* Styled form inputs and buttons
+* Table borders and spacing
+* Alternating table row colors
+* Card-style sections
+* Padding and margins
+* Borders and rounded corners
+* Responsive styling for smaller screens
+
+### script.js
+
+The `script.js` file provides the functionality of the Budget Tracker, including handling expense entries and displaying expense information.
+
+## Design Choices
+
+The application uses a clean blue and teal color palette. Blue is used mainly for headings and the table header, while teal is used for the main action button.
+
+The headings use **Poppins**, while the body text uses **DM Sans**. This creates a clear visual hierarchy and improves readability.
+
+The page heading, Add Expense form, and Expense Table are presented as separate cards using the CSS Box Model with margin, padding, borders, and border-radius.
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Google Fonts
+* GitHub
+
+## Learning Outcome
+
+Through this project, I practiced using CSS to create a more polished and user-friendly interface. I improved my understanding of color palettes, typography, table styling, form styling, and the CSS Box Model.
