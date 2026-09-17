@@ -1,17 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Budget Tracker</title>
+
+    ```
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
+
     <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
+    ```
+
 </head>
 
 <body>
 
+    ```
     <main class="container">
+
         <!-- Header Section -->
         <header id="main-header">
             <h1>My Budget Tracker</h1>
@@ -19,40 +29,89 @@
         </header>
 
         <!-- Add Expense Form Section -->
-        <section id="add-expense-section" class="card">
+        <section id="add-expense-section" class="card add-expense-section">
             <h2>Add New Expense</h2>
 
             <div class="form-group">
                 <label for="expense-name">Expense Name</label>
                 <input type="text" id="expense-name" placeholder="e.g., Groceries">
+            </div>
 
-                <div class="form-group">
-                    <label for="expense-amount">Amount ($)</label>
-                    <input type="number" id="expense-amount" placeholder="0.00">
-                </div>
+            <div class="form-group">
+                <label for="expense-amount">Amount ($)</label>
+                <input type="number" id="expense-amount" placeholder="0.00">
+            </div>
 
-                <div class="form-group">
-                    <label for="expense-category">Category</label>
-                    <select id="expense-category">
-                        <option value="">Select a category</option>
-                        <option value="food">Food & Dining</option>
-                        <option value="rent">Rent & Utilities</option>
-                        <option value="transport">Transportation</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+            <div class="form-group">
+                <label for="expense-category">Category</label>
+                <select id="expense-category">
+                    <option value="">Select a category</option>
+                    <option value="food">Food & Dining</option>
+                    <option value="rent">Rent & Utilities</option>
+                    <option value="transport">Transportation</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
-                <button type="button" class="btn-primary">Add Expense</button>
-        </section>
+            <button type="button" class="btn-primary">Add Expense</button>
+            <section id="expenses-list-section" class="card">
+                <h2>Your Expenses</h2>
 
-        <!-- Expenses Display / Placeholder Section -->
-        <section id="expenses-list-section" class="card">
-            <h2>Your Expenses</h2>
-            <p class="placeholder-text">No expenses added yet. Fill out the form above to get started!</p>
-        </section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Groceries</td>
+                            <td>$50.00</td>
+                            <td>Food & Dining</td>
+                            <td>2026-09-17</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bus Fare</td>
+                            <td>$10.00</td>
+                            <td>Transportation</td>
+                            <td>2026-09-17</td>
+                        </tr>
+
+                        <tr>
+                            <td>Electricity</td>
+                            <td>$30.00</td>
+                            <td>Rent & Utilities</td>
+                            <td>2026-09-16</td>
+                        </tr>
+
+                        <tr>
+                            <td>Movie</td>
+                            <td>$15.00</td>
+                            <td>Entertainment</td>
+                            <td>2026-09-15</td>
+                        </tr>
+
+                        <tr>
+                            <td>Other</td>
+                            <td>$20.00</td>
+                            <td>Other</td>
+                            <td>2026-09-14</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
     </main>
-    <script src="script.js" <>/script>
-</body >
 
-</html >
+    <script src="script.js"></script>
+    ```
+
+</body>
+
+</html>
