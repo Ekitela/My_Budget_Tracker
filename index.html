@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpendWise Dashboard</title>
-
+    <title>SpendWise Budget Tracker</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-
 
     <div class="dashboard">
 
@@ -47,56 +42,70 @@
                 </div>
             </header>
 
-            <section class="dashboard-grid">
+            <section class="budget-section">
+                <h2>Set Your Monthly Budget</h2>
 
-                <article class="category-card" tabindex="0">
-                    <div>
-                        <h2>Food</h2>
-                        <p class="card-description">Meals and groceries</p>
-                    </div>
-                    <strong>KSh 8,500</strong>
-                </article>
+                <form id="budget-form">
+                    <label for="budget-input">Monthly Budget (KSh)</label>
+                    <input type="number" id="budget-input" min="0" required>
+                    <button type="submit">Set Budget</button>
+                </form>
+            </section>
 
-                <article class="category-card" tabindex="0">
-                    <div>
-                        <h2>Transport</h2>
-                        <p class="card-description">Bus, fuel and travel</p>
-                    </div>
-                    <strong>KSh 4,200</strong>
-                </article>
+            <section class="expense-section">
+                <h2>Add an Expense</h2>
 
-                <article class="category-card" tabindex="0">
-                    <div>
-                        <h2>Rent</h2>
-                        <p class="card-description">Monthly housing cost</p>
-                    </div>
-                    <strong>KSh 12,000</strong>
-                </article>
+                <form id="expense-form">
+                    <label for="expense-name">Expense Name</label>
+                    <input type="text" id="expense-name" placeholder="e.g. Lunch" required>
 
-                <article class="category-card" tabindex="0">
-                    <div>
-                        <h2>Entertainment</h2>
-                        <p class="card-description">Leisure and activities</p>
-                    </div>
-                    <strong>KSh 2,500</strong>
-                </article>
+                    <label for="expense-amount">Amount (KSh)</label>
+                    <input type="number" id="expense-amount" min="1" placeholder="e.g. 500" required>
 
-                <article class="category-card" tabindex="0">
-                    <div>
-                        <h2>Savings</h2>
-                        <p class="card-description">Money set aside</p>
-                    </div>
-                    <strong>KSh 6,000</strong>
-                </article>
+                    <label for="expense-category">Category</label>
+                    <select id="expense-category" required>
+                        <option value="">Select category</option>
+                        <option value="Food">Food</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Other">Other</option>
+                    </select>
 
-                <article class="category-card" tabindex="0">
-                    <div>
-                        <h2>Utilities</h2>
-                        <p class="card-description">Electricity and water</p>
-                    </div>
-                    <strong>KSh 3,800</strong>
-                </article>
+                    <button type="submit">Add Expense</button>
+                </form>
+            </section>
 
+            <section class="summary-section">
+                <h2>Budget Summary</h2>
+
+                <div class="summary-grid">
+                    <article class="summary-card">
+                        <h3>Monthly Budget</h3>
+                        <strong id="budget-display">KSh 0</strong>
+                    </article>
+
+                    <article class="summary-card">
+                        <h3>Total Expenses</h3>
+                        <strong id="expenses-display">KSh 0</strong>
+                    </article>
+
+                    <article class="summary-card">
+                        <h3>Remaining Balance</h3>
+                        <strong id="balance-display">KSh 0</strong>
+                    </article>
+                </div>
+
+                <p id="budget-message">Set your budget to begin.</p>
+            </section>
+
+            <section class="expenses-section">
+                <h2>Expense Records</h2>
+
+                <div id="expense-list">
+                    <p>No expenses added yet.</p>
+                </div>
             </section>
 
         </main>
@@ -104,6 +113,7 @@
     </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
