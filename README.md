@@ -1,49 +1,122 @@
-# Budget Tracker
+# SpendWise Dashboard
 
 ## Project Description
 
-This Budget Tracker is a simple web application designed to help users record and organize their daily expenses. This week's work focused on improving the visual design of the existing Budget Tracker using CSS without adding new functionality.
+SpendWise is a responsive financial dashboard shell designed as the foundation for a budget-tracking application. This week's work focused on rebuilding the existing Budget Tracker layout using modern CSS Grid and Flexbox techniques.
+
+The dashboard contains a sidebar navigation menu, a header, and six financial category cards with realistic static information.
+
+## Dashboard Sections
+
+### Sidebar
+
+The sidebar contains navigation links for:
+
+* Dashboard
+* Expenses
+* Budget
+* Savings
+* Reports
+
+### Dashboard Header
+
+The header displays the SpendWise dashboard title, a short description, and a welcome message.
+
+### Financial Category Cards
+
+The dashboard contains six cards:
+
+* Food
+* Transport
+* Rent
+* Entertainment
+* Savings
+* Utilities
+
+Each card displays a category description and a realistic financial amount.
+
+## CSS Grid and Flexbox
+
+CSS Grid is used to create the main dashboard structure and arrange the financial cards.
+
+Flexbox is used to:
+
+* Arrange sidebar navigation items
+* Align the dashboard header content
+* Organize information inside each financial card
+
+No absolute positioning is used for the page layout.
+
+## CSS Custom Properties
+
+The application uses CSS variables in the `:root` selector for the main design theme, including:
+
+* Brand color
+* Accent color
+* Background color
+* Surface color
+* Primary text color
+* Secondary text color
+* Border color
+
+Using CSS custom properties makes the theme easier to maintain and modify.
+
+## Responsive Design
+
+The dashboard includes a media query for screens below 768px.
+
+On smaller screens:
+
+* The sidebar and main content become a single-column layout.
+* Navigation items can wrap across the available width.
+* The financial cards are displayed in one column.
+* The header content is arranged vertically.
+
+The responsive layout was tested using Chrome DevTools Device Toolbar.
+
+## Micro-interactions
+
+The financial cards include subtle interactions:
+
+* Hover effects move the cards slightly upward and add a shadow.
+* Keyboard focus displays a visible outline.
+* The transitions are completed within 200 milliseconds.
+
+## Dark Theme
+
+An optional dark theme is included using:
+
+```css
+@media (prefers-color-scheme: dark)
+```
+
+The dark theme overrides the CSS custom properties without changing the main layout styles.
 
 ## Files
 
 ### index.html
 
-The `index.html` file provides the structure of the Budget Tracker. It contains the page heading, Add Expense form, and Expense Table where expense information is displayed.
+Contains the structure of the SpendWise dashboard, including the sidebar, header, navigation menu, and six financial category cards.
 
 ### style.css
 
-The `style.css` file controls the visual appearance of the application. It includes:
-
-* A consistent blue and teal color palette
-* Google Fonts for headings and body text
-* Styled form inputs and buttons
-* Table borders and spacing
-* Alternating table row colors
-* Card-style sections
-* Padding and margins
-* Borders and rounded corners
-* Responsive styling for smaller screens
+Contains all visual styling, including CSS Grid, Flexbox, responsive design, CSS custom properties, card interactions, and the optional dark theme.
 
 ### script.js
 
-The `script.js` file provides the functionality of the Budget Tracker, including handling expense entries and displaying expense information.
-
-## Design Choices
-
-The application uses a clean blue and teal color palette. Blue is used mainly for headings and the table header, while teal is used for the main action button.
-
-The headings use **Poppins**, while the body text uses **DM Sans**. This creates a clear visual hierarchy and improves readability.
-
-The page heading, Add Expense form, and Expense Table are presented as separate cards using the CSS Box Model with margin, padding, borders, and border-radius.
+The existing JavaScript file is retained from the previous Budget Tracker project. No new functionality was required for this week's dashboard shell assignment.
 
 ## Technologies Used
 
 * HTML5
 * CSS3
-* JavaScript
+* CSS Grid
+* CSS Flexbox
+* CSS Custom Properties
 * Google Fonts
+* Responsive Design
 * GitHub
 
 ## Learning Outcome
 
-Through this project, I practiced using CSS to create a more polished and user-friendly interface. I improved my understanding of color palettes, typography, table styling, form styling, and the CSS Box Model.
+Through this project, I practiced building a modern dashboard layout using CSS Grid and Flexbox. I also improved my understanding of responsive design, CSS custom properties, micro-interactions, and reusable layout techniques.
