@@ -1,111 +1,100 @@
-
 # SpendWise – Interactive Budget Tracker
 
 ## Project Description
 
 SpendWise is a simple, interactive web application that helps users manage their monthly budgets and track expenses. Users can set a monthly budget, add expenses, view their spending summary, and delete recorded expenses.
 
-This week's work focused on making the application interactive using JavaScript, HTML, and CSS.
+The application displays financial amounts in Kenyan Shillings (KSh) and provides budget status messages to help users monitor their spending.
 
-## Features and Improvements
+## Features
 
 - Set and update a monthly budget.
 - Add expenses with a name, amount, category, and date.
 - View total expenses and remaining balance.
 - Display the number of recorded expenses.
-- Delete expenses when they are no longer needed.
+- Delete recorded expenses.
 - Receive warnings when spending approaches or exceeds the budget.
 - Responsive layout for smaller screens.
-- Display financial amounts in Kenyan Shillings (KSh).
-
-## Project Files
-
-### index.html
-
-Provides the structure of the application, including the budget form, expense form, dashboard summary, and expense table.
-
-### style.css
-
-Controls the appearance of the application. It includes the green color theme, styled forms and buttons, dashboard cards, table styling, and responsive design.
-
-### script.js
-
-Adds the interactive functionality using JavaScript. It handles budget calculations, expense records, validation, deletion, and dashboard updates.
-
-### README.md
-
-Provides information about the project, its features, technologies, and how JavaScript concepts are used.
-
-## How JavaScript Concepts Are Used
-
-### 1. Conditionals
-
-Conditional statements (`if`, `else if`, and `else`) validate user input and determine the budget status.
-
-For example:
-- If the budget is zero, the application asks the user to set a budget.
-- If expenses exceed the budget, a warning is displayed.
-- If 80% or more of the budget has been used, a caution message appears.
-- Otherwise, the application displays a message confirming that spending is within budget.
-
-### 2. Arrays
-
-An array named `expenses` stores multiple expense records.
-
-Each expense contains:
-- A unique ID
-- Expense name
-- Amount
-- Category
-- Date
-
-The `push()` method adds new expenses, while `filter()` removes deleted expenses.
-
-### 3. Loops
-
-`for` loops process the expense array to calculate total spending and display all recorded expenses.
-
-### 4. DOM Manipulation
-
-JavaScript uses DOM methods such as `getElementById()`, `createElement()`, and `textContent` to update the dashboard and expense table without reloading the page.
-
-### 5. Event Listeners
-
-Event listeners respond to user actions, including submitting the budget form, adding expenses, and clicking delete buttons.
-
-### 6. Dashboard Updates
-
-The `updateDashboard()` function recalculates the total expenses, remaining balance, expense count, and budget status whenever the budget or expense records change.
-
-## Testing
-
-The application was tested in a web browser by:
-- Setting a monthly budget.
-- Adding multiple expenses.
-- Checking the total expenses and remaining balance.
-- Deleting an expense and checking the updated figures.
-- Adding expenses that exceed the budget to test warning messages.
-
-## Challenges and Solutions
-
-One challenge was connecting JavaScript to the HTML forms and dashboard elements. This was resolved by using DOM selection methods and event listeners.
-
-Another challenge was ensuring that the dashboard updates whenever expenses are added or deleted. This was solved by creating a reusable `updateDashboard()` function.
+- Automatic dashboard updates.
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
-- Git and GitHub
+- HTML5 – Application structure.
+- CSS3 – Styling, layout, and responsive design.
+- JavaScript – Application functionality and calculations.
+- Git – Version control.
+- GitHub – Source code hosting.
+- Netlify – Website hosting and deployment.
 
-## Learning Outcomes
+## Project Files
 
-Through this project, I improved my understanding of JavaScript conditionals, arrays, loops, DOM manipulation, and event listeners. I also learned how to connect user interactions with application logic to create a functional budget tracker.
+- `index.html` – Structure of the application.
+- `style.css` – Application styling and responsive layout.
+- `script.js` – Budget calculations, expense management, and DOM updates.
+- `README.md` – Project documentation.
 
-## How to Run the Project
+## GitHub Repository Information
 
-1. Download or clone the repository.
+**Repository Name:** My_Budget_Tracker
+
+**GitHub Owner:** Ekitela
+
+**Repository URL:** https://github.com/Ekitela/My_Budget_Tracker
+
+The repository contains the complete SpendWise project source code.
+
+## Live Netlify Website URL
+
+**Live Website:** https://spendwise-ekitela.netlify.app/
+
+SpendWise is publicly accessible through this Netlify address.
+
+## Deployment Process Summary
+
+1. Organized the project files, including HTML, CSS, JavaScript, and README documentation.
+2. Committed and pushed the project changes to the GitHub repository.
+3. Merged the deployment branch into the main branch using a GitHub pull request.
+4. Connected the GitHub repository to Netlify.
+5. Configured the production branch as `main` and the publish directory as the project root.
+6. Deployed the website using Netlify.
+7. Changed the default Netlify subdomain to `spendwise-ekitela.netlify.app`.
+8. Checked the published files and tested the live website.
+
+## Challenges Encountered During Deployment
+
+One challenge was GitHub authentication when pushing changes from Ubuntu WSL. This was resolved by configuring Git Credential Manager.
+
+Another challenge was that the initial Netlify deployment contained empty files. I checked the GitHub repository, identified the correct project files, and deployed the latest commit successfully.
+
+## Testing
+
+The live website was tested to confirm that:
+
+- The dashboard displays correctly.
+- CSS styling and layout load correctly.
+- Users can set a monthly budget.
+- Users can add expenses.
+- Total expenses and remaining balances update correctly.
+- Users can delete expenses.
+- Budget warning messages work correctly.
+
+## Lessons Learned
+
+Through this project, I learned how to:
+
+- Use Git and GitHub for version control.
+- Create and merge branches using pull requests.
+- Deploy a static website using Netlify.
+- Connect a GitHub repository to a hosting platform.
+- Configure a production branch and publish directory.
+- Troubleshoot deployment problems.
+- Test a live website after deployment.
+
+I also improved my understanding of HTML, CSS, JavaScript, DOM manipulation, and interactive web application development.
+
+## How to Run the Project Locally
+
+1. Clone the GitHub repository.
 2. Open the project folder.
 3. Open `index.html` in a web browser.
 4. Set a monthly budget and start recording expenses.
