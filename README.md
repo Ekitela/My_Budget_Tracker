@@ -1,101 +1,80 @@
 # SpendWise – Interactive Budget Tracker
 
-## Project Description
+**Take control of your money, one expense at a time.**
 
-SpendWise is a simple, interactive web application that helps users manage their monthly budgets and track expenses. Users can set a monthly budget, add expenses, view their spending summary, and delete recorded expenses.
-
-The application displays financial amounts in Kenyan Shillings (KSh) and provides budget status messages to help users monitor their spending.
+SpendWise is a simple, interactive budget management application that helps users manage monthly budgets, track expenses and monitor savings goals.
 
 ## Features
 
-- Set and update a monthly budget.
-- Add expenses with a name, amount, category, and date.
-- View total expenses and remaining balance.
-- Display the number of recorded expenses.
-- Delete recorded expenses.
-- Receive warnings when spending approaches or exceeds the budget.
-- Responsive layout for smaller screens.
-- Automatic dashboard updates.
+### 1. Monthly Budget Management
+- Set and update monthly budgets.
+- Calculate total expenses automatically.
+- Display the remaining balance.
+- Provide budget status notifications.
+- Alert users when they have used at least 80% of their budget.
+
+### 2. Expense Management
+- Add expenses with names, amounts and categories.
+- Supported categories include Food, Transport, Shopping, Bills, Education and Other.
+- View expense history.
+- Delete individual expenses.
+- Clear all expense records.
+
+### 3. Savings Tracker
+- Set personal savings targets.
+- Add savings contributions.
+- Calculate total savings automatically.
+- Display the amount remaining to reach the target.
+- Show savings progress as a percentage.
+- Notify users when they achieve their savings goal.
+
+### 4. Data Persistence
+SpendWise uses browser localStorage to save budgets, expenses, savings contributions and savings goals. Information remains available after refreshing the browser.
+
+## JavaScript Concepts Used
+
+- Variables and arrays to store application data.
+- Functions to calculate budgets, expenses and savings.
+- Conditionals to validate inputs and display budget notifications.
+- Loops to calculate financial totals.
+- Array methods such as `push()` and `filter()`.
+- DOM manipulation to update dashboard information.
+- Event listeners to handle form submissions and button clicks.
+- localStorage to preserve user data.
 
 ## Technologies Used
 
-- HTML5 – Application structure.
-- CSS3 – Styling, layout, and responsive design.
-- JavaScript – Application functionality and calculations.
-- Git – Version control.
-- GitHub – Source code hosting.
-- Netlify – Website hosting and deployment.
-
-## Project Files
-
-- `index.html` – Structure of the application.
-- `style.css` – Application styling and responsive layout.
-- `script.js` – Budget calculations, expense management, and DOM updates.
-- `README.md` – Project documentation.
-
-## GitHub Repository Information
-
-**Repository Name:** My_Budget_Tracker
-
-**GitHub Owner:** Ekitela
-
-**Repository URL:** https://github.com/Ekitela/My_Budget_Tracker
-
-The repository contains the complete SpendWise project source code.
-
-## Live Netlify Website URL
-
-**Live Website:** https://spendwise-ekitela.netlify.app/
-
-SpendWise is publicly accessible through this Netlify address.
-
-## Deployment Process Summary
-
-1. Organized the project files, including HTML, CSS, JavaScript, and README documentation.
-2. Committed and pushed the project changes to the GitHub repository.
-3. Merged the deployment branch into the main branch using a GitHub pull request.
-4. Connected the GitHub repository to Netlify.
-5. Configured the production branch as `main` and the publish directory as the project root.
-6. Deployed the website using Netlify.
-7. Changed the default Netlify subdomain to `spendwise-ekitela.netlify.app`.
-8. Checked the published files and tested the live website.
-
-## Challenges Encountered During Deployment
-
-One challenge was GitHub authentication when pushing changes from Ubuntu WSL. This was resolved by configuring Git Credential Manager.
-
-Another challenge was that the initial Netlify deployment contained empty files. I checked the GitHub repository, identified the correct project files, and deployed the latest commit successfully.
+- HTML5
+- CSS3
+- JavaScript
+- Browser localStorage
+- Git and GitHub
+- Netlify
 
 ## Testing
 
-The live website was tested to confirm that:
+The following features were tested successfully:
 
-- The dashboard displays correctly.
-- CSS styling and layout load correctly.
-- Users can set a monthly budget.
-- Users can add expenses.
-- Total expenses and remaining balances update correctly.
-- Users can delete expenses.
-- Budget warning messages work correctly.
+- Setting monthly budgets.
+- Adding and deleting expenses.
+- Calculating remaining balances.
+- Setting savings goals.
+- Adding savings contributions.
+- Calculating savings progress.
+- Preserving data after refreshing the browser.
+- Budget alerts at 80% usage.
+- Clearing all expenses.
 
-## Lessons Learned
+## Live Application
 
-Through this project, I learned how to:
+https://spendwise-ekitela.netlify.app
 
-- Use Git and GitHub for version control.
-- Create and merge branches using pull requests.
-- Deploy a static website using Netlify.
-- Connect a GitHub repository to a hosting platform.
-- Configure a production branch and publish directory.
-- Troubleshoot deployment problems.
-- Test a live website after deployment.
+## GitHub Repository
 
-I also improved my understanding of HTML, CSS, JavaScript, DOM manipulation, and interactive web application development.
+https://github.com/Ekitela/My_Budget_Tracker
 
-## How to Run the Project Locally
+## Author
 
-1. Clone the GitHub repository.
-2. Open the project folder.
-3. Open `index.html` in a web browser.
-4. Set a monthly budget and start recording expenses.
+Ekitela Robert
 
+© 2026 SpendWise. Manage your money wisely.
